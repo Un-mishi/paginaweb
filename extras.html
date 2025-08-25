@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cursos - Colegio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Verdana', Geneva, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(90deg, #cc0000, #003366, #ffcc00);
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 1.8em;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    nav {
+      background-color: #003366;
+      padding: 12px 0;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      padding: 8px 15px;
+      border-radius: 6px;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #ffcc00;
+      color: #003366;
+    }
+
+    main {
+      padding: 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .contenido {
+      display: flex;
+      gap: 25px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .bloque {
+      flex: 1 1 30%;
+      background: white;
+      padding: 20px;
+      border: 3px solid #003366;
+      border-radius: 15px;
+      box-sizing: border-box;
+      box-shadow: 4px 4px 12px rgba(0,0,0,0.15);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .bloque:hover {
+      transform: translateY(-5px);
+      box-shadow: 6px 6px 15px rgba(0,0,0,0.2);
+    }
+
+    .bloque h2 {
+      color: #cc0000;
+      border-bottom: 2px solid #ffcc00;
+      padding-bottom: 8px;
+      margin-bottom: 12px;
+    }
+
+    .bloque p {
+      line-height: 1.6;
+    }
+
+    footer {
+      background: #003366;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 768px) {
+      .contenido {
+        flex-direction: column;
+      }
+
+      .bloque {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Colegio - Área Académica</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Cursos</a></li>
+      <li><a href="#">Actividades</a></li>
+      <li><a href="#">Noticias</a></li>
+      <li><a href="#">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="contenido">
+      <section class="bloque">
+        <h2>Matemáticas</h2>
+        <p><strong>Descripción:</strong> Desarrolla el razonamiento lógico y la capacidad de resolver problemas de la vida cotidiana.<br>
+        <strong>Objetivos:</strong> Fomentar el pensamiento crítico y el uso de estrategias matemáticas.<br>
+        <strong>Contenidos:</strong> Aritmética, álgebra, geometría, estadística, probabilidad.<br>
+        <strong>Metodología:</strong> Resolución de problemas, uso de material concreto y herramientas digitales.<br>
+        <strong>Evaluación:</strong> Pruebas escritas, ejercicios en clase.</p>
+      </section>
+
+      <section class="bloque">
+        <h2>Comunicación</h2>
+        <p><strong>Descripción:</strong> Promueve la comprensión lectora, la expresión oral y escrita, así como la capacidad de analizar textos.<br>
+        <strong>Objetivos:</strong> Desarrollar la comunicación efectiva y el pensamiento crítico.<br>
+        <strong>Metodología:</strong> Lectura guiada, debates, producción de textos, dramatizaciones.<br>
+        <strong>Evaluación:</strong> Ensayos, exposiciones, controles de lectura.</p>
+      </section>
+
+      <section class="bloque">
+        <h2>Ciencia y Tecnología</h2>
+        <p><strong>Descripción:</strong> Estimula la curiosidad científica y el uso responsable de la tecnología.<br>
+        <strong>Objetivos:</strong> Promover la indagación, la experimentación y la innovación.<br>
+        <strong>Contenidos:</strong> Biología, física, química, tecnología.<br>
+        <strong>Metodología:</strong> Experimentos, proyectos, uso de laboratorios y recursos digitales.<br>
+        <strong>Evaluación:</strong> Informes de laboratorio, proyectos grupales, exposiciones.</p>
+      </section>
+
+      <section class="bloque">
+        <h2>Ciudadanía y Cívica</h2>
+        <p><strong>Descripción:</strong> Forma ciudadanos responsables y conscientes de sus derechos y deberes.<br>
+        <strong>Objetivos:</strong> Fomentar la convivencia democrática, el respeto y la participación ciudadana.<br>
+        <strong>Contenidos:</strong> Constitución, derechos humanos, valores cívicos.<br>
+        <strong>Metodología:</strong> Debates, análisis de casos, trabajo comunitario.<br>
+        <strong>Evaluación:</strong> Ensayos, proyectos sociales, participación en clase.</p>
+      </section>
+
+      <section class="bloque">
+        <h2>Ciencias Sociales</h2>
+        <p><strong>Descripción:</strong> Estudia la historia, la geografía y la realidad social.<br>
+        <strong>Objetivos:</strong> Reconocer la importancia del pasado y el entorno geográfico.<br>
+        <strong>Contenidos:</strong> Historia del Perú y universal, geografía, economía básica.<br>
+        <strong>Metodología:</strong> Línea de tiempo, mapas conceptuales, visitas guiadas.<br>
+        <strong>Evaluación:</strong> Pruebas, proyectos de investigación, exposiciones.</p>
+      </section>
+
+      <section class="bloque">
+        <h2>Educación Religiosa</h2>
+        <p><strong>Descripción:</strong> Desarrolla valores espirituales, la reflexión ética y el respeto a las creencias.<br>
+        <strong>Objetivos:</strong> Fomentar la fe, la solidaridad y los principios morales.<br>
+        <strong>Contenidos:</strong> Textos bíblicos, historia de la Iglesia, valores universales.<br>
+        <strong>Metodología:</strong> Reflexiones, dinámicas, lectura de pasajes.<br>
+        <strong>Evaluación:</strong> Reflexiones escritas, participación en clase, proyectos de servicio.</p>
+      </section>
+
+      <section class="bloque">
+        <h2>Arte y Cultura</h2>
+        <p><strong>Descripción:</strong> Estimula la creatividad y la expresión artística.<br>
+        <strong>Objetivos:</strong> Desarrollar la sensibilidad estética y la identidad cultural.<br>
+        <strong>Contenidos:</strong> Dibujo, pintura, música, danza, teatro.<br>
+        <strong>Metodología:</strong> Talleres prácticos, presentaciones, exposiciones.<br>
+        <strong>Evaluación:</strong> Trabajos artísticos, presentaciones, creatividad.</p>
+      </section>
+
+      <section class="bloque">
+        <h2>Inglés</h2>
+        <p><strong>Descripción:</strong> Desarrolla la capacidad de comunicarse en inglés en situaciones cotidianas.<br>
+        <strong>Objetivos:</strong> Mejorar la comprensión oral, escrita y auditiva.<br>
+        <strong>Contenidos:</strong> Gramática básica, vocabulario, comprensión de textos.<br>
+        <strong>Metodología:</strong> Juegos de rol, diálogos, canciones, videos en inglés.<br>
+        <strong>Evaluación:</strong> Exámenes orales y escritos, proyectos grupales.</p>
+      </section>
+
+      <section class="bloque">
+        <h2>Educación para el Trabajo</h2>
+        <p><strong>Descripción:</strong> Fomenta habilidades técnicas, creativas y emprendedoras.<br>
+        <strong>Objetivos:</strong> Promover la iniciativa, la innovación y los proyectos productivos.<br>
+        <strong>Contenidos:</strong> Emprendimiento, proyectos, informática, oficios básicos.<br>
+        <strong>Metodología:</strong> Proyectos prácticos, talleres, herramientas digitales.<br>
+        <strong>Evaluación:</strong> Proyectos grupales, portafolio, presentaciones.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy;2025 República del Ecuador │ Contacto: republicadelecuador@minedu.com</p>
+  </footer>
+</body>
+</html>
