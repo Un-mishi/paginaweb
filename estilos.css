@@ -1,20 +1,18 @@
-    body {
+body {
       margin: 0;
       font-family: 'Verdana', Geneva, sans-serif;
       background-color: #f4f4f4;
       color: #333;
-      line-height: 1.6;
     }
 
     header {
-      background: linear-gradient(90deg, #003366, #cc0000, #ffcc00);
+      background: linear-gradient(90deg, #cc0000, #003366, #ffcc00);
       color: white;
       padding: 20px;
       text-align: center;
-    }
-
-    header h1 {
-      font-size: 1.8rem;
+      font-size: 1.8em;
+      font-weight: bold;
+      letter-spacing: 2px;
     }
 
     nav {
@@ -26,10 +24,9 @@
       list-style: none;
       display: flex;
       justify-content: center;
-      gap: 20px;
+      gap: 25px;
       margin: 0;
       padding: 0;
-      flex-wrap: wrap;
     }
 
     nav a {
@@ -39,7 +36,6 @@
       padding: 8px 15px;
       border-radius: 6px;
       transition: background 0.3s;
-      font-size: 1rem;
     }
 
     nav a:hover {
@@ -48,24 +44,32 @@
     }
 
     main {
-      padding: 20px;
-      max-width: 1100px;
+      padding: 30px;
+      max-width: 1200px;
       margin: auto;
     }
 
     .contenido {
       display: flex;
-      flex-direction: column;
-      gap: 20px;
+      gap: 25px;
+      flex-wrap: wrap;
+      justify-content: center;
     }
 
     .bloque {
+      flex: 1 1 30%;
       background: white;
       padding: 20px;
       border: 3px solid #003366;
       border-radius: 15px;
       box-sizing: border-box;
       box-shadow: 4px 4px 12px rgba(0,0,0,0.15);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .bloque:hover {
+      transform: translateY(-5px);
+      box-shadow: 6px 6px 15px rgba(0,0,0,0.2);
     }
 
     .bloque h2 {
@@ -73,88 +77,45 @@
       border-bottom: 2px solid #ffcc00;
       padding-bottom: 8px;
       margin-bottom: 12px;
-      font-size: 1.5rem;
     }
 
-    .bloque h3 {
-      color: #003366;
-      margin-top: 20px;
-      font-size: 1.2rem;
-    }
-
-    .bloque p, .bloque ul {
-      font-size: 1rem;
-    }
-
-    .bloque ul {
-      margin: 10px 0 20px 25px;
+    .bloque p {
+      line-height: 1.6;
     }
 
     footer {
       background: #003366;
       color: white;
       text-align: center;
-      padding: 15px;
-      margin-top: 30px;
-      font-size: 0.9rem;
+      padding: 20px;
+      margin-top: 40px;
+      font-size: 0.9em;
     }
-
-    /* Ajustes responsivos */
+  .descarga {
+    display: inline-block;
+    background: #003366;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background 0.3s, transform 0.2s;
+  }
+  .descarga:hover {
+    background: #cc0000;
+    transform: scale(1.05);
+  }
+  .descarga:active {
+    background: #ffcc00;
+    color: #003366;
+  }
     @media (max-width: 768px) {
-      header h1 {
-        font-size: 1.4rem;
-      }
-
-      nav a {
-        font-size: 0.9rem;
-        padding: 6px 12px;
-      }
-
-      .bloque h2 {
-        font-size: 1.3rem;
-      }
-
-      .bloque h3 {
-        font-size: 1.1rem;
-      }
-
-      .bloque p, .bloque ul {
-        font-size: 0.95rem;
-      }
-    }
-
-    @media (max-width: 480px) {
-      header h1 {
-        font-size: 1.2rem;
-      }
-
-      nav ul {
+      .contenido {
         flex-direction: column;
-        align-items: center;
-        gap: 10px;
-      }
-
-      nav a {
-        font-size: 0.85rem;
       }
 
       .bloque {
-        padding: 15px;
-      }
-
-      .bloque h2 {
-        font-size: 1.1rem;
-      }
-
-      .bloque h3 {
-        font-size: 1rem;
-      }
-
-      .bloque p, .bloque ul {
-        font-size: 0.9rem;
-      }
-
-      footer {
-        font-size: 0.8rem;
+        flex: 1 1 100%;
       }
     }
